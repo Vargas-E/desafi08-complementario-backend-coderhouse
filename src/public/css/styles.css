@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #009B72;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 25;
+    padding: 2rem;
+}
+
+.button {
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0.5rem;
+    background-color: #1A3A3A;
+    cursor: pointer;
+}
+
+.fixMargin {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.appbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1A3A3A;
+    padding: 2rem 1rem;
+}
+
+.menuButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.navButton {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    color: lightgreen;
+    pointer-events: none;
+}
+
+
+/* Clases para nueva pagina de products */
+#productCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.productCard {
+    min-width: 250px;
+    background-color: #0c1b1b;
+    height: 50vh;
+    border-radius: 15px;
+}
+
+.productImage {
+    border-radius: 15px 15px 0 0;
+    background-color: aliceblue;
+    height: 60%;
+}
+
+.textAndButtonContainer {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.newButton {
+    border-radius: 0 0 10px 10px;
+}
+
+.quantityContainer {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    margin: 0.5rem 0;
+
+}
+
+.arrowButton {
+    background-color: #1A3A3A;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.quantityCounter {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009B72;
+    border-radius: 10px;
+    height: 50px;
+    margin: 0 1rem;
+}
+
+#cartContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: auto;
+    gap: 1.5rem;
+}
+
+.cardAndIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteButtonCart {
+    background-color: red;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    height: 20%;
+}
+
+.cartCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0c1b1b;
+    width: 100%;
+    color: white;
+    border-radius: 15px;
+    min-height: 200px;
+
+}
+
+.cartCardTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.cartCardImageContainer {
+    background-color: red;
+    width: 40%;
+    border-radius: 0 15px 15px 0;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: grey;
+}
+
+#pageButtonsContainer {
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#pageCounter {
+    color: white;
+    border-radius: 10px;
+    background-color: #0c1b1b;
+    padding: 1rem;
+}
+
+.logoGreetingContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: center;
+}
+
+.userData {
+    color: #009B72;
+    text-transform: uppercase;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.authPage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 1rem;
+}
+
+.authContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+}
+
+.authCard {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #0c1b1b;
+    color: #009B72;
+    border-radius: 20px;
+    min-width: 300px;
+    min-height: 200px;
+}
+
+.authTitle {
+    font-size: 20px;
+    align-self: center;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.authRedirect {
+    align-self: center;
+}
+
+.input {
+    border-radius: 10px;
+    border: 1px solid 1A3A3A;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0rem;
+}
+
+.githubAuth {
+    border-radius: 15px;
+    padding: 1rem 0.5rem;
+    background-color: #0c1b1b;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.githubLogo {
+    height: 25px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+.linkText {
+    margin-right: 3rem;
+    vertical-align: middle;
+    color: #009B72;
+    font-weight: bold;
+}
+
+.aFix {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
