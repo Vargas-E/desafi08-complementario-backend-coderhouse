@@ -55,6 +55,7 @@ router.get(
       age: req.user.age,
       email: req.user.email,
       rol: req.user.rol,
+      cart: req.user.cart
     };
 
     const token = jwt.sign(userForToken, "coderhouse", { expiresIn: "1h" });

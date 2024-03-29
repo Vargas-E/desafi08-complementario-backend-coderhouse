@@ -160,29 +160,7 @@ const initializePassport = () => {
       }
     )
   );
-
-  passport.serializeUser((user, done) => {
-    done(null, user._id);
-  });
-
-  passport.deserializeUser(async (id, done) => {
-    if (id == 1) {
-      const user = {
-        _id: 1,
-        email: "adminCoder@coder.com",
-        password: "adminCod3r123",
-        first_name: "admin_name",
-        last_name: "admin_last_name",
-        age: 30,
-        rol: "admin",
-        cart: "1",
-      };
-      done(null, user);
-    } else {
-      let user = await UserModel.findById({ _id: id });
-      done(null, user);
-    }
-  });
+  
 };
 
 const cookieExtractor = (req) => {
